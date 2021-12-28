@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="../public/css/media.css">
+    <link rel="stylesheet" href="../public/css/waves.css">
+    <link rel="icon" href="../public/img/img/OBJECT.png">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <script src="../public/js/jquery-3.5.1.js"></script>
+</head>
+<body onload="AutoChanger()">
+    <div class="RestaurantPage">
+
+        <div class="logo">
+            <img src="../public/img/icons/OBJECT.png" alt="">
+        </div>
+    <aside>
+        <div class="aside">
+            <div class="extras resextra-1">
+                <img src="../public/img/img/Rectangle 74.png" alt="">
+            </div>
+            <div class="extras resextra-2">
+                <img src="../public/img/img/Rectangle 74.png" alt="">
+            </div>
+            <div class="extras resextra-3">
+                <img src="../public/img/img/Ellipse 68.png" alt="">
+            </div>
+
+            <div class="info">
+                 <div class="auto_item-1 item">
+                <img src="../public/img/icons/send.png" alt="send icon" srcset="">
+                <h4>Send Information</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum tempora voluptatibus veritatis expedita hic, culpa repellendus voluptate repellat, a optio dolor error accusantium sit voluptas commodi, ex quam aliquid laborum?</p>
+                </div>
+                <div class="auto_item-2 item">
+                    <img src="../public/img/icons/contract (2).png" alt="">
+                    <h4>Fill Form</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quia illum. Iste possimus culpa suscipit, odio commodi sapiente debitis error quaerat non, quos neque aperiam repudiandae id cupiditate illum dolore!</p>
+                </div>
+                <div class="auto_item-3 item">
+                    <img src="../public/img/icons/documents (1).png" alt="">
+                    <h4>Verify User</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, quia illum. Iste possimus culpa suscipit, odio commodi sapiente debitis error quaerat non, quos neque aperiam repudiandae id cupiditate illum dolore!</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+   <main>
+ <div class="resturant-content">
+       
+    <form action="http://127.0.0.1:5000/register/restaurants" method="post">
+
+    <div class="page-1">
+
+            <div class="header">
+                <div class="counter">
+                    <p>step <span>1/3</span></p>
+            </div>
+                <h2>Basic info</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, Nunc, pretium numc vitae, vulpautate</p>
+            </div>
+            <div class="extras resextra-4">
+                <img src="../public/img/img/Daco_43005.png" alt="">
+            </div>
+            <div class="form-1">
+                    <input type="text" placeholder="Enter restaurant name*" name="restaurants_name">
+                    <input type="text" placeholder="Enter full name*" name="full_name">
+                    <input type="text" placeholder="Enter phone number*" name="phone_number">
+                    <input type="number" placeholder="Enter city" name="city">
+                    <input type="email" placeholder="Enter email address*" name=email>
+                    <input type="text" placeholder="Enter restuarant phone number*" name="restaurant_phone"> <br>
+
+                    <div class="e">
+                    <h5>I am the:</h5>
+                    <input type="radio" name="owner" id=""><label for="owner">Owner</label>
+                    <input type="radio" name="manager" id=""><label for="manager">Manager</label>               
+                    </div>
+    
+            </div><br>
+            <span onclick="SPA('page-2')" id="next">Next</span>     
+
+            <div class="extras resextra-5">
+                <img src="../public/img/img/pasta-bolognese-sauce-italian-cuisine-lasagne-wine-wine-f18db469c8aff8c8b2843a5fe9398039.png" alt="">
+            </div>
+    </div>
+
+    <div class="page-2">
+        <div class="header">
+            <div class="counter">
+                <p>step <span>2/3</span></p>
+            </div>
+            <h2>Restaurant Schedule</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, Nunc, pretium numc vitae, vulpautate</p>
+        </div>
+        
+        <div class="form-2">
+            <div class="days">
+                <div class="day">
+                    <h3>Sunday</h3>
+                    <h3>9:00 AM  -- 6:30 PM</h3>
+                </div>
+                <div class="checkbox checkbox-2">
+                    <input type="checkbox" name="sunday" id="">
+                    <div class="designedButton" onclick="CheckBox('form-2 .checkbox-2')"><i></i></div>
+                    </input>
+                </div>
+            </div>
+                <div class="days">
+                    <div class="day">
+                        <h3>Monday</h3>
+                        <h3>9:00 AM  -- 6:30 PM</h3>
+                    </div>
+                    <div class="checkbox checkbox-1">
+                        <input type="checkbox" name="monday" id="">
+                        <div class="designedButton" onclick="CheckBox('form-2 .checkbox-1')"><i></i></div>
+                        </input>
+                    </div>
+                </div>
+                <div class="days">
+                    <div class="day">
+                        <h3>Tuesday</h3>
+                        <h3>9:00 AM  -- 6:30 PM</h3>
+                    </div>
+                    <div class="checkbox checkbox-2">
+                        <input type="checkbox" name="tuesday" id="">
+                        <div class="designedButton" onclick="CheckBox('form-2 .checkbox-2')"><i></i></div>
+                        </input>
+                    </div>
+                </div>
+                <div class="days">
+                    <div class="day">
+                        <h3>Wednesday</h3>
+                        <h3>9:00 AM  -- 6:30 PM</h3>
+                    </div>
+                    <div class="checkbox checkbox-3">
+                        <input type="checkbox" name="wednesday" id="">
+                        <div class="designedButton" onclick="CheckBox('form-2 .checkbox-3')"><i></i></div>
+                        </input>
+                    </div>
+                </div>   
+                <div class="days">
+                    <div class="day">
+                        <h3>Thursday</h3>
+                        <h3>9:00 AM  -- 6:30 PM</h3>
+                    </div>
+                    <div class="checkbox checkbox-4">
+                        <input type="checkbox" name="thursday" id="">
+                        <div class="designedButton" onclick="CheckBox('form-2 .checkbox-4')"><i></i></div>
+                        </input>
+                    </div>
+                </div>
+                <div class="days">
+                    <div class="day">
+                        <h3>Friday</h3>
+                        <h3>9:00 AM  -- 6:30 PM</h3>
+                    </div>
+                    <div class="checkbox checkbox-2">
+                        <input type="checkbox" name="friday" id="">
+                        <div class="designedButton" onclick="CheckBox('form-2 .checkbox-2')"><i></i></div>
+                        </input>
+                    </div>
+                </div>
+                <div class="days">
+                    <div class="day">
+                        <h3>Saturday</h3>
+                        <h3>9:00 AM  -- 6:30 PM</h3>
+                    </div>
+                    <div class="checkbox checkbox-2">
+                        <input type="checkbox" name="saturday" id="">
+                        <div class="designedButton" onclick="CheckBox('form-2 .checkbox-2')"><i></i></div>
+                        </input>
+                    </div>
+                </div>
+        </div>
+        <div class="controls">
+            <span onclick="SPA('page-3')" id="next">Next</span> 
+            <span onclick="SPA('page-1')" id="prev"> <pre><--</pre> Back</span>    
+        </div>
+        
+    </div>
+
+
+    <div class="page-3">
+
+        <div class="header">
+            <div class="counter">
+                <p>step <span>3/3</span></p>
+        </div>
+            <h2>Other Information</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing  elit, Nunc, pretium numc vitae, vulpautate</p>
+        </div>
+  <div class="page-3_content">
+
+        <div class="form-3">
+            <div class="services">
+                <h4>Services</h4>
+                <div class="service">
+                    <div class="ser-1 ser">
+                        <input type="checkbox" name="Breakfast" id="">
+                        <span onclick="CheckBox('form-3 .ser-1')">Breakfast</span>            
+                    </div>
+                    <div class="ser-2 ser">
+                        <input type="checkbox" name="Lunch" id="">
+                        <span onclick="CheckBox('form-3 .ser-2')">Lunch</span>
+                    </div>
+                    <div class="ser-3 ser">
+                        <input type="checkbox" name="Dinner" id="">
+                        <span onclick="CheckBox('form-3 .ser-3')">Dinner</span>
+                    </div>
+                    <div class="ser-4 ser">
+                        <input type="checkbox" name="Cafe" id="">
+                        <span onclick="CheckBox('form-3 .ser-4')">Cafe's</span>
+                    </div> 
+                    </div>
+                </div>
+                <div class="cuisines">
+                    <h4>Cusines:</h4>
+                    <div class="cuisine">
+                        <div class="cui-1 cui">
+                            <input type="checkbox" name="Local" id="">
+                            <span onclick="CheckBox('form-3 .cui-1')">Local</span>
+                        </div>
+                        <div class="cui-2 cui">
+                            <input type="checkbox" name="International" id="">
+                            <span onclick="CheckBox('form-3 .cui-2')">International</span>
+                        </div>
+                        <div class="cui-3 cui">
+                            <input type="checkbox" name="FastFood" id="">
+                            <span onclick="CheckBox('form-3 .cui-3')">fast Food</span>
+                        </div>
+                        <div class="cui-4 cui">
+                            <input type="checkbox" name="Drinks" id="">
+                            <span onclick="CheckBox('form-3 .cui-4')">Drinks</span>
+                        </div> 
+                        </div>
+                </div>
+                <div class="payment">
+                    <h4>Payment Method:</h4>
+                    <div class="method">
+                        <div class="pay-1 pay">
+                            <input type="checkbox" name="Cash" id="">
+                            <span onclick="CheckBox('form-3 .pay-1')">Cash</span>
+                        </div>
+                        <div class="pay-2 pay">
+                            <input type="checkbox" name="Card" id="">
+                            <span onclick="CheckBox('form-3 .pay-2')">Card</span>
+                        </div>
+                        <div class="pay-3 pay">
+                            <input type="checkbox" name="Paypal" id="">
+                            <span onclick="CheckBox('form-3 .pay-3')">Paypal</span>
+                        </div>
+                        <div class="pay-4 pay">
+                            <input type="checkbox" name="Transfer" id="">
+                            <span onclick="CheckBox('form-3 .pay-4')">Bank Transfer</span>
+                        </div> 
+                        </div>
+                </div>
+                <div class="openStatus">
+                    <h4>Open Status</h4>
+                    <input type="radio" name="openedAlready" id="">
+                    <label for="openedAlready">Opened already</label>
+                    <input type="radio" name="openingSoon" id="">
+                    <label for="openingSoon">Opening Soon</label>
+                </div>
+
+            </div>
+            <div class="location">
+                <input type="text" name="Restaurants Address" id="" placeholder="Restaurants Address*">
+                <div class="map">
+                    <img src="../public/img/img/Rectangle 29.png" alt="">
+                </div>
+            </div>
+              
+  </div>
+
+  <span onclick="SPA('page-2')" id="prev">  Back</span>   
+  <input type="submit" value="Submit" id="next" /> 
+
+        </div>
+
+    </div>
+  
+
+</form>  
+
+    </div>
+   </main>
+            
+   </div>
+</body>
+<script src="../public/js/main.js"></script>
+<script src="../public/js/index.js"></script>
+</html>

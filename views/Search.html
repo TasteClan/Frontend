@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<link rel="stylesheet" href="../public/css/index.css">
+<link rel="stylesheet" href="../public/css/media.css">
+<link rel="stylesheet" href="../public/css/waves.css">
+<link rel="icon" href="../public/img/img/OBJECT.png">
+<link rel="stylesheet" href="../public/css/main.css">
+<script src="../public/js/jquery-3.5.1.js"></script>
+<body>
+    <div class="searchPage">
+        <div class="searchArea">
+            <form action="">
+                <input type="search" placeholder="search vendors or places">
+                <input type="submit" value="SEARCH">
+            </form>
+        </div>
+        <div class="result">
+            <div class="header">
+                <h3>Popular Searches</h3>
+            </div>
+            <ul>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <!-- <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li>
+                <li>Sweet Savor</li> -->
+            </ul>
+        </div>
+
+        <div class="searchResult">
+            <div class="header">
+                <div class="back">
+                    <i></i> BACK TO HOME
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="menu">
+                    <div class="map">
+                        <h3>Map View</h3>
+                        <div class="designedButton" onclick="CheckBox('form-2 .checkbox-3')"><i></i></div>
+                    </div>
+                    <div class="status">
+                        <h3>Status</h3>
+                        <ul>
+                            <li>online</li>
+                            <li>offline</li>
+                        </ul>
+                    </div>
+                    <div class="dishes">
+                        <h3>Cuisines</h3>
+                        <div class="local">
+                            <p>Local</p>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <div class="international">
+                            <p>International dishes</p>
+                        </div>
+                        <div class="fastFood">
+                            <p>Fast Food</p>
+                        </div>
+                    </div>
+                    <div class="Distance">
+                        <h3>Delivery</h3>
+                        <input type="range" name="" id="">
+                    </div>
+                    <div class="Price Range">
+                        <h3>Price Rnage</h3>
+                        <input type="range" name="" id="">
+                    </div>
+                </div>
+                <div class="mapResult">
+                    <img src="../public/img/img/Map Search.png" alt="">
+                </div>
+                <div class="canteensResult">
+
+                    <div class="options">
+                        <div class="delivery">
+                            <i></i>
+                            Delivery
+                        </div>
+                        <div class="today">
+                            <i></i>
+                            Today
+                        </div>
+                    </div>
+
+                    <div class="resultDetails">
+                        <div class="number">
+                            <p>16 Results</p>
+                        </div>
+                        <div class="categories">
+                            <select name="categories" id="">
+                                <option value="favorite">Favorite</option>
+                                <option value="popular">Popular</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="cateens vendor-1">
+                        <div class="img"></div>
+                        <div class="box cateens-content">
+                            <div class="like"></div>
+                            <div class="status">
+                                <span></span>
+                                <p>online</p>
+                            </div>
+                            <div class="info">
+                                <h2 class="name">Chapter Canteen</h2>
+                                <h6 class="desc">Local dish, International dishes, drinks</h6>
+                            </div>
+                            <div class="deliveryDetials">
+                                <div class="rating">
+                                    <span></span>
+                                    <p>5.0</p>
+                                </div>
+                                <div class="time">
+                                    <span></span>
+                                    <p>15-45min</p>
+                                </div>
+                            </div>
+                            <div class="button">View Details</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="errorMessage">
+            <img src="../public/img/icons/Emoji.png" alt="">
+            <h3>We didn't find a Match for <i>"Spilled Milke"</i></h3>
+            <p>Try Searching for something instead</p>
+            <span class="button">VIEW ALL RESTAURANTS</span>
+        </div>
+    </div>
+</body>
+<script src="../public/js/index.js"></script>
+<script src="../public/js/main.js"></script>
+</html>

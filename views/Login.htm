@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="../public/css/media.css">
+    <link rel="stylesheet" href="../public/css/waves.css">
+    <link rel="icon" href="../public/img/img/OBJECT.png">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <script src="../public/js/jquery-3.5.1.js"></script>
+</head>
+<body>
+<main>
+        <div class="LoginMain .animate">
+            <div class="screen-1">
+                <div class="logo">
+                    <img src="../public/img/img/OBJECT.png" alt="">
+                </div>
+                <div class="welcomeText wel-1">
+                    <h1>Hello Friend!</h1>
+                    <p>Enter your details and start a yummy journey with us</p>
+                    <span onclick="swapScreens('LoginMain')">Sign up</span>
+                </div>
+                <div class="welcomeText wel-2">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login into your account</p>
+                    <span onclick="swapScreens('LoginMain')">Sign up</span>
+                </div>
+                
+                <div class="footer">
+                    <p>All Rights Reserved 2021</p>
+                </div>
+            </div>
+
+            <div class="extras logextra-1">
+                <img src="../public/img/img/img1.png" alt="extras image">
+            </div>
+
+            <!-- The second screen containing the forms -->
+         <div class="screen-2">
+
+                <div class="form loginForm">
+                    <div class="header">
+                        <h1>Welcome Back</h1>
+                        <p>Log in to continue</p>
+                    </div>
+                    <form action="http://127.0.0.1:5000/login" method="post">
+                        <span><img src="../public/img/icons/Email.png" alt=""></span>
+                        <input type="email" name="email" id="" placeholder="Enter email address">
+                        <span><img src="../public/img/icons/Lock.png" alt=""></span>
+                        <input type="password" name="password" placeholder="Enter password">
+                        <a href=""><p>Forgot Password</p></a>
+                        <input type="submit" value="LOG IN">
+                    </form>
+                    <div class="loginOptions-container">
+                        <div class="loginOtherOptions">
+                            <p>OR</p>
+                            <p>log in with</p>
+                            <ul>
+                                <li><img src="../public/img/icons/Group 12.png" alt=""></li>
+                                <li><img src="../public/img/icons/Group 11.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="signup">
+                            <p>Don't have an account? <span onclick="swapScreens('LoginMain')">Sign Up</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form signupForm">
+                    <div class="header">
+                        <h1>Create New Account</h1>
+                        <p>Sign up to continue</p>
+                    </div>
+                    <form action="">
+                        <span><img src="../public/img/icons/User.png" alt=""></span>
+                        <input type="text" name="fullname" id="" placeholder="Enter full name">
+                        <span><img src="../public/img/icons/Email.png" alt=""></span>
+                        <input type="email" name="email" id="" placeholder="Enter email address">
+                        <span><img src="../public/img/icons/Lock.png" alt=""></span>
+                        <input type="password" name="password" placeholder="Enter password">
+                        <input type="radio" name="checkbox" id="">
+                        <label for="checkbox">I agree to TasteClan's terms and conditions</label>
+                        <input type="submit" value="SIGN UP">
+                    </form>
+                    <div class="loginOptions-container">
+                        <div class="loginOtherOptions">
+                            <p>OR</p>
+                            <p>sign up with</p>
+                            <ul>
+                                <li><img src="../public/img/icons/Group 12.png" alt=""></li>
+                                <li><img src="../public/img/icons/Group 11.png" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="signup">
+                            <p>I have an account  <span onclick="swapScreens('LoginMain')">Log In</span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+    <script src="../public/js/index.js"></script>
+    <script src="../public/js/main.js"></script>
+    
+</html>
