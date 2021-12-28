@@ -1,0 +1,1386 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #F2F2F2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Open Sans;
+}
+
+body h1, h2, h3, p {
+  font-family: Open Sans;
+}
+
+*::-moz-selection {
+  background: transparent;
+  color: #282B30;
+}
+
+*::selection {
+  background: transparent;
+  color: #282B30;
+}
+
+* {
+  -webkit-transition: 0.3 0.7s;
+  transition: 0.3 0.7s;
+}
+
+a {
+  text-decoration: none;
+  color: #282B30;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  outline: 0px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.designedButton {
+  background: #e2e1e1;
+  width: 60px;
+  height: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.designedButton i {
+  background: #f9f9f9;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(5px, 2.5px);
+          transform: translate(5px, 2.5px);
+}
+
+* {
+  -webkit-transition: 0.37s;
+  transition: 0.37s;
+}
+
+.hom-extra-0 {
+  position: absolute;
+}
+
+.hom-extra-1 {
+  position: absolute;
+}
+
+.hom-extra-2 {
+  position: absolute;
+}
+
+.hom-extra-3 {
+  position: absolute;
+}
+
+.hom-extra-4 {
+  position: absolute;
+}
+
+.hom-extra-5 {
+  position: absolute;
+}
+
+.hom-extra-6 {
+  position: absolute;
+}
+
+.hom-extra-7 {
+  position: absolute;
+}
+
+.hom-extra-8 {
+  position: absolute;
+}
+
+.hom-extra-9 {
+  position: absolute;
+}
+
+.loadingPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+  width: 100%;
+  height: 100vh;
+}
+
+.loadingPage p {
+  font-size: 40px;
+  color: transparent;
+  -webkit-text-stroke: .4px white;
+  letter-spacing: 15px;
+  -webkit-text-width: 100;
+  -webkit-animation: animateLoader 15s linear forwards;
+          animation: animateLoader 15s linear forwards;
+}
+
+@-webkit-keyframes animateLoader {
+  from {
+    background: transparent;
+  }
+  to {
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 14px white;
+  }
+}
+
+@keyframes animateLoader {
+  from {
+    background: transparent;
+  }
+  to {
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 14px white;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .loadingPage p {
+    font-size: 20px;
+  }
+}
+
+.HomePage {
+  display: none;
+}
+
+.HomePage .mpages {
+  display: none;
+  z-index: 3;
+  background-color: #f9f9f9;
+  width: 0%;
+  position: absolute;
+  left: 0%;
+  top: 5px;
+  height: 100%;
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
+.HomePage .mpages ul li {
+  display: block;
+  margin: 30px;
+  font-size: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.HomePage .mpages ul li:hover {
+  font-size: 33px;
+}
+
+.HomePage .hom-extra-1 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.HomePage .hom-extra-1 img {
+  width: 150px;
+}
+
+.HomePage header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15px;
+}
+
+.HomePage header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.HomePage header .logo p {
+  color: #FE724E;
+  text-align: center;
+  padding: 4px;
+}
+
+.HomePage header .logo sup img {
+  width: 30px;
+  height: auto;
+}
+
+.HomePage header .hamburger {
+  display: none;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.HomePage header .hamburger ul li {
+  width: 35px;
+  height: 4px;
+  margin: 7px;
+  background-color: #282B30;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.HomePage header .wpages ul li {
+  float: left;
+  margin: 5px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.HomePage header .wpages ul li:hover {
+  border-bottom: 1px solid #FFC42B;
+}
+
+.HomePage header .search img {
+  position: relative;
+  left: 20px;
+  top: 5px;
+}
+
+.HomePage header .search input {
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: 0px;
+  padding: 3px;
+  padding-left: 20px;
+  width: 150px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  text-align: left;
+  background-color: transparent;
+}
+
+.HomePage header .search input:focus {
+  background-color: transparent;
+}
+
+.HomePage header .sign-log ul li {
+  float: left;
+  margin: 20px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 1.25px;
+  cursor: pointer;
+}
+
+.HomePage header .sign-log .signup span {
+  background-color: #FE724E;
+  border-radius: 50px;
+  height: 56px;
+  width: 140px;
+  padding: 20px;
+  color: #f9f9f9;
+  cursor: pointer;
+}
+
+.HomePage header .sign-log .signup span:hover {
+  background-color: transparent;
+  color: #FE724E;
+  border: 1px solid #FE724E;
+}
+
+@media screen and (max-width: 990px) {
+  .HomePage header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-left: -30px;
+  }
+  .HomePage header .hamburger {
+    display: block;
+    z-index: 4;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .HomePage header .wpages, .HomePage header .search, .HomePage header .signup {
+    display: none;
+  }
+  .HomePage header .logo {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .HomePage header .sign-log {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+}
+
+.HomePage main {
+  color: #282B30;
+}
+
+.HomePage main section .explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -50px;
+}
+
+.HomePage main section .explore .countdisp {
+  position: relative;
+  left: 20%;
+}
+
+.HomePage main section .explore .countdisp #countnumber {
+  color: #FFC42B;
+  position: static;
+  width: 50px;
+  height: 52px;
+  /* Heading/H2 */
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 52px;
+  /* identical to box height, or 108% */
+}
+
+.HomePage main section .explore .countdisp #countnumber sup {
+  font-size: 40px;
+  position: relative;
+  top: -10px;
+}
+
+.HomePage main section .explore .countdisp #countnumber::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -38px;
+  width: 35px;
+  height: 4px;
+  background: #FFC42B;
+}
+
+.HomePage main section .explore main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 2px;
+          column-gap: 2px;
+  margin-bottom: 60px;
+}
+
+.HomePage main section .explore main .landingimg {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.HomePage main section .explore main .landingimg img {
+  width: 280px;
+  height: auto;
+  -webkit-animation: animateImg 3s linear;
+          animation: animateImg 3s linear;
+}
+
+@-webkit-keyframes animateImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animateImg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.HomePage main section .explore main img {
+  width: 200px;
+  height: auto;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.HomePage main section .explore main .text {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  color: #282B30;
+  width: 500px;
+}
+
+.HomePage main section .explore main .text h1 {
+  height: 118px;
+  color: #FE724E;
+  /* Heading/H1 */
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 69px;
+  /* or 108% */
+  font-family: Open Sans;
+  letter-spacing: -0.5px;
+}
+
+.HomePage main section .explore main .text p {
+  height: 83px;
+  /* Body/Normal - Regular */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  /* or 134% */
+  letter-spacing: 0.5px;
+  opacity: 0.7;
+}
+
+.HomePage main section .explore main .text span {
+  height: 30px;
+  padding: 20px;
+  background-color: #FE724E;
+  border-radius: 50px;
+  color: #f9f9f9;
+  cursor: pointer;
+  text-align: center;
+}
+
+.HomePage main section .explore main .text span:hover {
+  background-color: transparent;
+  color: #FE724E;
+  border: 1px solid #FE724E;
+}
+
+@media screen and (max-width: 990px) {
+  .HomePage main section .explore main .landingimg img {
+    width: 220px;
+    height: auto;
+  }
+  .HomePage main section .explore main span img {
+    display: none;
+  }
+  .HomePage main section .explore main .text {
+    width: 400px;
+  }
+  .HomePage main section .explore main .text h1 {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 600;
+    height: 35px;
+  }
+  .HomePage main section .explore main .text p {
+    font-size: 14px;
+    padding: 20px;
+    height: 55px;
+  }
+  .HomePage main section .explore main .text span {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+}
+
+.HomePage main aside .social {
+  position: fixed;
+  right: 2%;
+  top: 40%;
+  z-index: 99;
+}
+
+.HomePage main aside .social ul li {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+          box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+}
+
+.HomePage main aside .social ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+.HomePage main aside .social ul li img {
+  width: 20px;
+}
+
+.HomePage main aside .toTop {
+  position: fixed;
+  right: 2%;
+  z-index: 99;
+  display: none;
+}
+
+.HomePage main aside .toTop span {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+          box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+  background: #FECCBF;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+
+.HomePage main aside .toTop span img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 25px;
+}
+
+.HomePage main section .favChoice {
+  background-color: #FECCBF;
+}
+
+.HomePage main section .favChoice .hom-extra-2 {
+  right: -2px;
+  z-index: 99;
+  -webkit-transform: translateY(120px);
+          transform: translateY(120px);
+}
+
+.HomePage main section .favChoice .hom-extra-2 img {
+  width: 50px;
+}
+
+.HomePage main section .favChoice .favChoiceContent .title {
+  margin-left: 40px;
+}
+
+.HomePage main section .favChoice .favChoiceContent .title h4 {
+  /* paragraph tag*/
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 0px;
+  color: #282B30;
+  position: relative;
+  top: 90px;
+  padding: 20px 0px 0px 20px;
+}
+
+.HomePage main section .favChoice .favChoiceContent .title h4::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #FE724E;
+  -webkit-transform: translateX(-40px);
+          transform: translateX(-40px);
+}
+
+.HomePage main section .favChoice .favChoiceContent .title h4::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #FE724E;
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.HomePage main section .favChoice .favChoiceContent .title h2 {
+  font-size: 24px;
+  color: #FE724E;
+  font-weight: bold;
+  position: relative;
+  top: 90px;
+  padding: 20px;
+}
+
+.HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants {
+  padding: 10px;
+  padding-top: 50px;
+}
+
+.HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants #restaurant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+}
+
+.HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants #restaurant::-webkit-scrollbar {
+  height: 3px;
+}
+
+.HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants #restaurant::-webkit-scrollbar-thumb {
+  background: #f9f9f9;
+}
+
+.HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants #restaurant .r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  width: 150px;
+  padding: 15px;
+  height: 60px;
+  border-radius: 50px;
+  background: #f9f9f9;
+  -webkit-box-shadow: 4px 4px 16px rgba(75, 0, 0, 0.12);
+          box-shadow: 4px 4px 16px rgba(75, 0, 0, 0.12);
+}
+
+.HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants #restaurant .r .tag img {
+  width: 60px;
+  height: 60px;
+}
+
+.HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants #restaurant .r .resName {
+  font-size: small;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin: 0px 5px;
+}
+
+.HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants #restaurant .r img {
+  margin: 0px 5px;
+  opacity: .5;
+}
+
+.HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants .hom-extra-3 {
+  z-index: 90;
+}
+
+.HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants .hom-extra-3 img {
+  width: 50px;
+}
+
+@media screen and (max-width: 900px) {
+  .HomePage main section .favChoice .favChoiceContent .title p {
+    text-align: left;
+  }
+  .HomePage main section .favChoice .favChoiceContent .popularResturants .Resturants #restaurant {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+.HomePage main section .aboutSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.HomePage main section .aboutSection .img img {
+  width: 450px;
+  height: auto;
+}
+
+.HomePage main section .aboutSection .hom-extra-4 {
+  left: -10px;
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+
+.HomePage main section .aboutSection .hom-extra-4 img {
+  width: 100px;
+}
+
+.HomePage main section .aboutSection .text {
+  width: 500px;
+}
+
+.HomePage main section .aboutSection .text h2 {
+  color: #FE724E;
+}
+
+.HomePage main section .aboutSection .text p {
+  margin-top: 30px;
+  height: 95px;
+  padding: 10px;
+}
+
+.HomePage main section .aboutSection .text span {
+  padding: 20px;
+  background-color: #FE724E;
+  border-radius: 50px;
+  color: #f9f9f9;
+  cursor: pointer;
+  text-align: center;
+}
+
+.HomePage main section .aboutSection .text span:hover {
+  background-color: transparent;
+  color: #FE724E;
+  border: 1px solid #FE724E;
+}
+
+@media screen and (max-width: 990px) {
+  .HomePage main section .aboutSection .img img {
+    width: 350px;
+  }
+  .HomePage main section .aboutSection .text span {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 200px;
+  }
+}
+
+.HomePage main .hom-extra-5 {
+  right: 0px;
+}
+
+.HomePage main .hom-extra-5 img {
+  width: 200px;
+}
+
+.HomePage main section .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  margin-top: 100px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.HomePage main section .services .content .header h2, .HomePage main section .services .content .header h3 {
+  padding: 10px;
+}
+
+.HomePage main section .services .content .header h2 {
+  color: #FE724E;
+}
+
+.HomePage main section .services .content .boxSect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.HomePage main section .services .content .boxSect .box {
+  width: 280px;
+  height: auto;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  margin: 20px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+.HomePage main section .services .content .boxSect .box h2 {
+  font-size: medium;
+}
+
+.HomePage main section .services .content .boxSect .box img {
+  width: 50px;
+  height: auto;
+}
+
+.HomePage main section .services .content .boxSect .box:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 26px rgba(75, 0, 0, 0.12);
+          box-shadow: 4px 4px 26px rgba(75, 0, 0, 0.12);
+}
+
+.HomePage main section .services .imgSection img {
+  width: 400px;
+  height: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .HomePage main section .services .imgSection .imgtry .shape {
+    height: 250px;
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .HomePage main section .services .boxSect {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .HomePage main section .services .boxSect {
+    width: 240px;
+  }
+}
+
+.HomePage main section .quickPickSection {
+  margin-top: 150px;
+  padding: 70px;
+  background-color: #FECCBF;
+}
+
+.HomePage main section .quickPickSection .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+.HomePage main section .quickPickSection .header .title h2 {
+  color: #FE724E;
+}
+
+.HomePage main section .quickPickSection .header .places ul li {
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.HomePage main section .quickPickSection .header .places ul li:hover {
+  border-bottom: 1.5px solid #FE724E;
+}
+
+.HomePage main section .quickPickSection .cateens-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.HomePage main section .quickPickSection .cateens-container .hom-extra-6 {
+  right: -10px;
+}
+
+.HomePage main section .quickPickSection .cateens-container .hom-extra-6 img {
+  width: 100px;
+}
+
+.HomePage main section .quickPickSection .cateens-container .hom-extra-7 {
+  left: -30px;
+  -webkit-transform: translateY(300px);
+          transform: translateY(300px);
+}
+
+.HomePage main section .quickPickSection .cateens-container .hom-extra-7 img {
+  width: 100px;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .img {
+  width: 130px;
+  height: 130px;
+  z-index: 99;
+  position: relative;
+  top: 60px;
+  background: url("../img/img/Container.png") no-repeat;
+  background-size: contain;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .box {
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: #f9f9f9;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .info h2, .HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .info h6 {
+  text-align: center;
+  line-height: 0.5px;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .info p {
+  text-align: center;
+  height: 30px;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .status {
+  margin-top: 43px;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .status p {
+  text-align: center;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .status p::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #beec60;
+  -webkit-transform: translate(-15px, 5px);
+          transform: translate(-15px, 5px);
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .deliveryDetials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .deliveryDetials .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .deliveryDetials .rating span {
+  width: 20px;
+  height: 20px;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .deliveryDetials .time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .deliveryDetials .time span {
+  width: 20px;
+  height: 20px;
+}
+
+.HomePage main section .quickPickSection .cateens-container .cateens .cateens-content .button {
+  padding: 20px;
+  background-color: #FE724E;
+  border-radius: 50px;
+  color: #f9f9f9;
+  cursor: pointer;
+  text-align: center;
+}
+
+.HomePage main section .quickPickSection .loadButton {
+  padding: 20px;
+  background-color: #FE724E;
+  border-radius: 50px;
+  color: #f9f9f9;
+  cursor: pointer;
+  text-align: center;
+  margin: 30px auto 0px auto;
+  width: 200px;
+}
+
+.HomePage main section .quickPickSection .loadButton:hover {
+  background-color: transparent;
+  color: #FE724E;
+  border: 1px solid #FE724E;
+}
+
+@media screen and (max-width: 900px) {
+  .HomePage main section .quickPickSection .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .HomePage main section .quickPickSection .header .places ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: auto;
+  }
+}
+
+.HomePage main .extra-one img {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  left: 70%;
+}
+
+.HomePage main section .testimoniesSection {
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HomePage main section .testimoniesSection .img img {
+  width: 450px;
+  height: auto;
+}
+
+.HomePage main section .testimoniesSection .content {
+  width: 500px;
+}
+
+.HomePage main section .testimoniesSection .content .header h2 {
+  color: #FE724E;
+}
+
+.HomePage main section .testimoniesSection .content .controls {
+  margin-left: -65px;
+}
+
+.HomePage main section .testimoniesSection .content .controls ul li {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+          box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+  float: left;
+}
+
+.HomePage main section .testimoniesSection .content .controls ul li:hover {
+  background: #FECCBF;
+}
+
+.HomePage main section .testimoniesSection .content .controls ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+  font-weight: bolder;
+}
+
+.HomePage main section .testimoniesSection .content .controls ul li span img {
+  width: 20px;
+  height: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .HomePage main section .testimoniesSection .img img {
+    max-width: 300px;
+  }
+  .HomePage main section .testimoniesSection .content .controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: -45px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .HomePage main .extra-two img {
+    width: 150px;
+    height: 250px;
+  }
+}
+
+.HomePage main section .partnership {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-top: -150px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HomePage main section .partnership .content {
+  margin: 40px;
+  max-width: 500px;
+  padding: 70px;
+  text-align: center;
+  border-radius: 50px;
+  background: #FECCBF;
+}
+
+.HomePage main section .partnership .content .button {
+  padding: 20px;
+  background-color: #FE724E;
+  border-radius: 50px;
+  color: #f9f9f9;
+  cursor: pointer;
+  text-align: center;
+  width: 100px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.HomePage main section .partnership .content .button:hover {
+  background-color: transparent;
+  color: #FE724E;
+  border: 1px solid #FE724E;
+}
+
+.HomePage footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+.HomePage footer .footer {
+  margin-top: 200px;
+  background: #f9f9f9;
+  width: 100%;
+  padding: 30px;
+}
+
+.HomePage footer .footer .footerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.HomePage footer .footer .footerContent .logo_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.HomePage footer .footer .footerContent .logo_social img {
+  width: 80px;
+  height: auto;
+}
+
+.HomePage footer .footer .footerContent .logo_social .social {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.HomePage footer .footer .footerContent .logo_social .social ul li {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  margin: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+          box-shadow: 0px 6px 26px rgba(75, 0, 0, 0.12);
+  float: left;
+  margin: 3px;
+}
+
+.HomePage footer .footer .footerContent .logo_social .social ul li span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100%;
+}
+
+.HomePage footer .footer .footerContent .logo_social .social ul li img {
+  width: 20px;
+  height: 20px;
+}
+
+.HomePage footer .footer .copy p {
+  text-align: center;
+}
+/*# sourceMappingURL=index.css.map */

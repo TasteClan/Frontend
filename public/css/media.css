@@ -1,0 +1,58 @@
+@media screen and (max-width: 930px) and (max-width: 930px) {
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+  }
+  p {
+    padding: 10px;
+    text-align: center;
+  }
+  html::-webkit-scrollbar-track {
+    width: 0px;
+    height: 0px;
+    background: transparent;
+  }
+  html::-webkit-scrollbar {
+    width: 10px;
+    height: 0px;
+  }
+  html::-webkit-scrollbar-thumb {
+    background: rgba(243, 63, 63, 0.802);
+  }
+  .HomePage header {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  section .explore main .img img {
+    width: 250px;
+    height: 250px;
+  }
+  section .explore main span img {
+    display: none;
+  }
+  section .explore main .text {
+    width: 400px;
+  }
+  section .explore main .text h1 {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 600;
+    height: 60px;
+  }
+  section .explore main .text p {
+    font-size: 14px;
+    padding: 20px;
+  }
+  section .explore main .text span {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+  }
+  /* the About Page Responsiveness at screen 990px*/
+  .howToOrderSection, .ourStorySection {
+    max-width: 90%;
+  }
+}
+/*# sourceMappingURL=media.css.map */

@@ -1,0 +1,70 @@
+.custom-shape-divider-top-1634610468 {
+  position: absolute;
+  top: 200;
+  left: 0px;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1634610468 svg {
+  position: relative;
+  display: block;
+  width: calc(103% + 1.3px);
+  height: 153px;
+}
+
+.custom-shape-divider-top-1634610468 .shape-fill {
+  fill: #F2F2F2;
+}
+
+.custom-shape-divider-top-1634610468 .shape-fill2 {
+  fill: #FECCBF;
+}
+
+.custom-shape-divider-top-1634610468 .shape-fill-abt1 {
+  fill: #F2F2F2;
+  top: 400;
+}
+
+.custom-shape-divider-top-1634610468 .shape-fill-abt1 {
+  fill: #F2F2F2;
+  top: 400;
+}
+
+.custom-shape-divider-top-1634610468 .shape-fill-abt2 {
+  fill: #e5e5e5;
+  top: 400;
+}
+
+/* .div {
+    display: block;
+    position: relative;
+    top: -2px;
+    height: 200px;
+    background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(229, 229, 229, 1)" d="M 0 8 C 219.29999999999998 8 511.70000000000005 110 731 110 L 731 110 L 731 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(254, 114, 78, 1)" d="M 730 110 C 943 110 1227 0 1440 0 L 1440 0 L 1440 0 L 730 0 Z" stroke-width="0"></path> </svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   
+   @media (max-width:1439px) {
+    .div {
+      background-size: contain;
+    }
+} */
+.div {
+  display: block;
+  position: relative;
+  top: 20px;
+  height: 3px;
+  width: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1407 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill="rgba(229, 229, 229, 1)" d="M 0 0 C 214.2 0 499.8 110 714 110 L 714 110 L 714 0 L 0 0 Z" stroke-width="0"></path> <path fill="rgba(229, 229, 229, 1)" d="M 713 110 C 926 110 1210 0 1423 0 L 1423 0 L 1423 0 L 713 0 Z" stroke-width="0"></path> </svg>');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1406px) {
+  .div {
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=waves.css.map */
