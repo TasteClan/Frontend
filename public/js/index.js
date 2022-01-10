@@ -2,7 +2,7 @@
 setInterval(function () {
     $('.loadingPage').css('display', 'none');
     $('.HomePage').css('display', 'block');
-});
+}, 0);
 /*  hamburger animation */
 var hamburgerCounter = 0;
 $(".hamburger").on("click", function () {
@@ -12,6 +12,7 @@ $(".hamburger").on("click", function () {
         $(".hamburger ul li:nth-Child(2)").css('display', 'none');
         $(".hamburger ul li:nth-Child(3)").css('transform', 'rotate(-45deg)');
         $(".mpages").css({ 'width': '100%', 'display': 'block', 'transition': '1s' });
+        $("html").css('');
     }
     else {
         $(".hamburger ul li:nth-Child(1)").css({ 'transform': 'translateY(0px) rotate(0deg)', 'transition': 0.4 });
