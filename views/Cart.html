@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../public/css/index.css">
+    <link rel="stylesheet" href="../public/css/media.css">
+    <link rel="stylesheet" href="../public/css/waves.css">
+    <link rel="icon" href="../public/img/img/OBJECT.png">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <script src="../public/js/jquery-3.5.1.js"></script>
+</head>
+<body onload="cartCalc()">
+    <div class="ShoppingCart-Page" >
+
+            <div class="page-1">
+                <main>
+                    <header>
+                        <div class="header">
+                            <h2>Shopping Cart</h2>
+                            <span id="items">5 ITEMS</span>
+                            <div class="order">
+                                <h4>ORDERS FROM</h4>
+                                <span></span>
+                            </div>                 
+                        </div>
+                    </header>
+        
+                 <div class="main-content">
+                     <div class="items-container">
+                        <table>
+                            <tr>
+                                <th>items</th>
+                                <th>Unit Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+        
+                            <tr class="item item-1">
+                                <td class="data-1">
+                                    <img src="../public/img/img/img4.png" alt="">
+                                    <div class="details">
+                                        <h3>Deep Rosted Chicken Serving 1</h3>
+                                        <p>Choice <span>Fish, Bread</span></p>
+                                        <p>Topping <span>Fish, Sause</span></p>
+                                    </div>
+                                 </td>
+                                    <td class="price">
+                                        <span>N2,500</span>
+                                    </td>
+                                    <td class="quantity" onkeyup="cartCalc('item-1')">
+                                        <input type="number" name="" id="" value=1>
+                                    </td>
+                                    <td class="total">
+                                        <span>N4,000</span>
+                                    </td>
+                                    <td class="del">
+                                        <i onclick="Delete('item-1')">X</i>
+                                    </td>
+                                    <br>
+                            </tr>
+        
+                            <tr class="item item-2">
+                                <td class="data-1">
+                                    <img src="../public/img/img/img4.png" alt="">
+                                    <div class="details">
+                                        <h3>Deep Rosted Chicken Serving 2</h3>
+                                        <p>Choice <span>Fish, Bread</span></p>
+                                        <p>Topping <span>Fish, Sause</span></p>
+                                    </div>
+                                </td>
+                                    <td class="price">
+                                        <span>N2,500</span>
+                                    </td>
+                                    <td class="quantity" onkeyup="cartCalc('item-2')">
+                                        <input type="number" name="" id="" value=1>
+                                    </td>
+                                    <td class="total">
+                                        <span>N4,000</span>
+                                    </td>
+                                    <td class="del">
+                                        <i onclick="Delete('item-2')">X</i>
+                                    </td>
+                                
+                            </tr>
+        
+                            <tr class="item item-3">
+                                <td class="data-1">
+                                    <img src="../public/img/img/img4.png" alt="">
+                                    <div class="details">
+                                        <h3>Deep Rosted Chicken Serving 3</h3>
+                                        <p>Choice <span>Fish, Bread</span></p>
+                                        <p>Topping <span>Fish, Sause</span></p>
+                                    </div>
+                                </td>
+                                    <td class="price">
+                                        <span>N2,500</span>
+                                    </td>
+                                    <td class="quantity" onkeyup="cartCalc('item-3')" value=1>
+                                        <input type="number" name="" id="" value=1>
+                                    </td>
+                                    <td class="total">
+                                        <span>N4,000</span>
+                                    </td>
+                                    <td class="del">
+                                        <i onclick="Delete('item-3')">X</i>
+                                    </td>
+                                
+                            </tr>
+        
+                            <tr class="item item-4">
+                                <td class="data-1">
+                                    <img src="../public/img/img/img4.png" alt="">
+                                    <div class="details">
+                                        <h3>Deep Rosted Chicken Serving 4</h3>
+                                        <p>Choice <span>Fish, Bread</span></p>
+                                        <p>Topping <span>Fish, Sause</span></p>
+                                    </div>
+                                </td>
+                                    <td class="price">
+                                        <span>N2,500</span>
+                                    </td>
+                                    <td class="quantity" onkeyup="cartCalc('item-4')">
+                                        <input type="number" name="" id="" value="1">
+                                    </td>
+                                    <td class="total">
+                                        <span>N4,000</span>
+                                    </td>
+                                    <td class="del">
+                                        <i onclick="Delete('item-4')">X</i>
+                                    </td>
+                               
+                            </tr>
+        
+                        </table>
+                        
+                    </div>
+        
+                    <div class="buttons">
+                        <span class="back">⬅ CONTINUE SHOPPING</span>
+                        <span class="promo" onclick="SPA('item .item-4')">GET FREE DELIVERY WITH TASTE PRIME</span>
+                    </div>
+                    </div>
+        
+                </main>
+        
+                <aside>
+                    <div class="header">
+                        <h2>Summary</h2>
+                    </div>
+                    <div class="main">
+                        <div class="sum">
+                            <p>Subtotal</p>
+                            <span id="subtotal">N14,000</span>
+                        </div>
+                        <div class="sum">
+                            <p>Delivery</p>
+                            <span id="delivery">N500</span>
+                        </div>
+                        <div class="sum">
+                            <p>Promo Code</p>
+                            <input type="number" name="" id="" placeholder="enter code" onclick="{{ alert('No Promo Code available now!') }}">
+                        </div>
+                    </div>
+                    <div class="button">
+                        <span onclick="{{document.querySelector('.userDetails .page-1').style.display = 'block'; PreviewCart(); SPA_single('page-2')}}">CHECK OUT ↪  </span>
+                    </div>
+                </aside>
+        
+            </div>
+
+    </div>
+
+ <!-- checkout-page -->
+<div class="CheckOutPage">
+        <div class="page-2">
+            <header>
+                <div class="logo">
+                    <img src="../public/img/img/Logo.png" alt="">
+                    <span class="close" onclick="{{document.querySelector('.ShoppingCart-Page .page-1').style.display = 'flex'}}">X Close</span>
+                </div>
+            </header>
+                <div class="main-content-container">
+                    <aside>
+                        <div class="option">
+                            <div class="header">
+                                <h2>Checkout</h2>
+                            </div>
+                            <div class="content">
+                                    <p> <span class="animation"></span> User Detials</p>
+                                    <p><span class="animation"></span> Shipping Details</p>
+                                    <p><span class="animation"></span> Payment Details</p>
+                            </div>
+                        </div>
+                    </aside>
+        
+                     <main>
+        
+                         <!-- userDetails page -->
+                        <div class="userDetails">
+                            <div class="page-1">
+                                <div class="header">
+                                    <h4>Who is placing this order?</h4>
+                                </div>
+            
+                                <div class="form">
+                                    <form action="/">
+                                        <input type="email" name="email" id="" placeholder="Email Address">
+                                        <div class="div-sec">
+                                            <input type="text" name="first_name" id="" placeholder="First Name">
+                                            <input type="text" name="last_name" id="" placeholder="Last Name">
+                                        </div>
+                                        <input type="submit" value="PROCEED TO SHOPPING" onclick="">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+        
+                 <form action="">
+                        <!-- shipping Details -->
+                        <div class="shippingDetails">
+                            <div class="page-3">
+                                <div class="header">
+                                    <h4>Where would you like to send the order?</h4>
+                                </div>
+                                <div class="form">
+                                    <input type="text" name="country" id="" placeholder="Country">
+                                    <input type="text" name="address" id="" placeholder="Address">
+                                    <div class="div-sec">
+                                        <input type="text" name="state" id="" placeholder="State">
+                                        <input type="text" name="city" id="" placeholder="City">
+                                    </div>
+                                    <div class="div-sec">
+                                        <input type="number" name="Zcode" id="" placeholder="Zip Code">
+                                        <input type="tel" name="phone" id="" placeholder="Phone number">
+                                    </div>
+                                    <input type="text" name="note" id="" placeholder="Order Note (optional)">
+                                    
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- payment Detials -->
+                        <div class="paymentDetails">
+                            <div class="header">
+                                <h4>How would you like to pay?</h4>
+                            </div>
+        
+                            <div class="pay-type">
+                                <div class="credit-card type">
+                                    <input type="radio" name="payment">
+                                    <p>Pay with Credit Card</p>
+                                </div>
+                                <div class="paypal type">
+                                    <input type="radio" name="payment">
+                                    <p>Pay with Paypal</p>
+                                </div>
+                                <div class="credit-card type">
+                                    <input type="radio" name="payment">
+                                    <p>Pay with Credit Card</p>
+                                </div>
+                            </div>
+        
+                            <div class="form">
+                                <input type="text" name="name_on_card" id="" placeholder="Name on Card">
+                                <input type="number" controls=none placeholder="Card Number" >
+                                <div class="div-sec">
+                                    <input type="text" name="Expires_date" id="" placeholder="Expiration Data">
+                                    <input type="number" name=cvv placeholder="CVV">
+                                </div>
+                            </div>
+        
+                            <div class="terms">
+                                <div class="shipping ter">
+                                    <input type="checkbox" name="use_shipping_as_billing" id="">
+                                    <p>Use Shipping address as Billing</p>
+                                </div>
+                                <div class="tasteclan-terms ter">
+                                    <input type="checkbox" name="tasteclan_terms" id="">
+                                    <p>I accept Tasteclan Terms and Condition. </p>
+                                </div>
+        
+                                <div class="submit-button">
+                                    <input type="submit" value="COMPLETE PURCHASE">
+                                </div>
+                            </div>
+                        </div>
+                 </form>
+        
+                     </main>
+        
+                     <aside>             
+                        <div class="purchase-details">
+                            <div class="item-detail-1 item-det">
+                                <div class="item-name">
+                                    <h3>Delivery Services</h3>
+                                    <p></p>
+                                </div>
+                                <p>x3</p>
+                                <div class="price">
+                                    <span>N7500</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                     </aside>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="../public/js/index.js"></script>
+<script src="../public/js/main.js"></script>
+</html>
